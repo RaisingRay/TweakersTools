@@ -1,0 +1,15 @@
+table, th ,td{
+  border: solid 1px;
+}
+
+th{
+  background: lightgrey;
+  cursor: default;
+}
+
+th:hover{
+  background: white;
+}
+table{
+  width: 300px;
+}
