@@ -5,8 +5,11 @@ function addRowData(){
   var last=document.getElementById("last").value;
   document.getElementById("name").value='';
   document.getElementById("last").value='';
+  //this is it
   addTR(table,[name,last]);
 }
+
+
 
 //this is the fuction to used
 //takes table and an array of data to insert it to the table on first row
