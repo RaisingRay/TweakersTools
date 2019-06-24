@@ -1,14 +1,18 @@
-function addTR(){
-  var name =document.getElementById('name').value;
-  var last =document.getElementById('last').value;
-  var table= document.getElementsByTagName("tbody")[0];
-  var row = table.insertRow(0);
+//using my function
+function addRowData(){
+  var table=document.getElementsByTagName("table")[0];
+  var name=document.getElementById("name").value;
+  var last=document.getElementById("last").value;
+  addTR(table,[name,last]);
+}
 
-// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
-var cell1 = row.insertCell(0);
-var cell2 = row.insertCell(1);
-
-// Add some text to the new cells:
-cell1.innerHTML = name;
-cell2.innerHTML = last;
+//this is the fuction to used
+//takes table and an array of data to insert it to the table on first row
+function addTR(table, arrayOfData){
+  //takes the first row of the table
+  var row = document.getElementsByTagName("tbody")[0].insertRow(0);
+  //looping through the data and creating as many TD and give them the data
+  for(var i=0;i<arrayOfData.length;i++){
+    row.insertCell(i).innerHTML=arrayOfData[i];
+  }
 }
