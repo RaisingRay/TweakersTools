@@ -3,6 +3,8 @@ function addRowData(){
   var table=document.getElementsByTagName("table")[0];
   var name=document.getElementById("name").value;
   var last=document.getElementById("last").value;
+  document.getElementById("name").value='';
+  document.getElementById("last").value='';
   addTR(table,[name,last]);
 }
 
