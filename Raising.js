@@ -6,7 +6,9 @@ function addRowData(){
   document.getElementById("name").value='';
   document.getElementById("last").value='';
   //this is it
-  addTR(table,[name,last]);
+
+addTHead(table,["test1","test2"]);
+  //addTR(table,[name,last]);
 }
 
 
@@ -19,5 +21,16 @@ function addTR(table, arrayOfData){
   //looping through the data and creating as many TD and give them the data
   for(var i=0;i<arrayOfData.length;i++){
     row.insertCell(i).innerHTML=arrayOfData[i];
+  }
+}
+
+//add fills table header with columns
+function addTHead(table,arraOfTH){
+  var thead=document.getElementsByTagName("thead")[0];
+  var tr= (thead.rows[0]==null) ?thead:thead.rows[0];
+  for(var i=0;i<arraOfTH.length;i++){
+    var th=document.createElement('th');
+    th.innerHTML=arraOfTH[i];
+    tr.appendChild(th);
   }
 }
