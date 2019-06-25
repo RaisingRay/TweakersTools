@@ -11,7 +11,7 @@ addTHead(table,["test1","test2"]);
   //addTR(table,[name,last]);
 }
 
-
+//still in testing so i might not use all var from functions
 
 //this is the fuction to used
 //takes table and an array of data to insert it to the table on first row
