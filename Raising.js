@@ -7,7 +7,8 @@ function addRowData(){
   document.getElementById("last").value='';
   //this is it
 
-addTHead(table,["test1","test2"]);
+ //addTR(table,["test1","test2"]);
+ //addTHead(table,["test1","test2"]);
   //addTR(table,[name,last]);
 }
 
@@ -17,7 +18,7 @@ addTHead(table,["test1","test2"]);
 //takes table and an array of data to insert it to the table on first row
 function addTR(table, arrayOfData){
   //takes the first row of the table
-  var row = document.getElementsByTagName("tbody")[0].insertRow(0);
+  var row =table.tBodies[0].insertRow(0);
   //looping through the data and creating as many TD and give them the data
   for(var i=0;i<arrayOfData.length;i++){
     row.insertCell(i).innerHTML=arrayOfData[i];
@@ -26,7 +27,7 @@ function addTR(table, arrayOfData){
 
 //add fills table header with columns
 function addTHead(table,arraOfTH){
-  var thead=document.getElementsByTagName("thead")[0];
+  var thead=table.tHead;
   var tr= (thead.rows[0]==null) ?thead:thead.rows[0];
   for(var i=0;i<arraOfTH.length;i++){
     var th=document.createElement('th');
