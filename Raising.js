@@ -25,7 +25,7 @@ function addTR(table, arrayOfData){
   }
 }
 
-//add fills table header with columns//
+//add fills table header with columns////
 function addTHead(table,arraOfTH){
   var thead=table.tHead;
   var tr= (thead.rows[0]==null) ?thead:thead.rows[0];
