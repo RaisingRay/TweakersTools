@@ -5,7 +5,6 @@ table, th ,td{
 th{
   background: lightgrey;
   cursor: default;
-  transition: 0.3s linear;
 }
 
 th:hover{
