@@ -1,20 +1,30 @@
 //using my function
 function addRowData(){
   var table=document.getElementsByTagName("table")[0];
-  var name=document.getElementById("name").value;
-  var last=document.getElementById("last").value;
-  document.getElementById("name").value='';
-  document.getElementById("last").value='';
-  //this is it
+  jsonList=
+    [
+          {"name":"fredj","last":"mahmoud"},
+          {"name":"test2","last":"t"},
+          {"name":"lqs","last":"sd"}
+    ];
 
- //addTR(table,["test1","test2"]);
- //addTHead(table,["test1","test2"]);
-  //addTR(table,[name,last]);
+    addTable(table,jsonList);
+
+
 }
 
-//still in testing so i might not use all var from functions
 
-//this is the fuction to used
+
+
+function addTable(table,jsonlist){
+  addTHead(table,Object.keys(jsonList[0]));
+  for(var i=0;i<jsonList.length;i++){
+    addTR(table, Object.values(jsonList[i]));
+  };
+}
+
+
+//this is the fuction used
 //takes table and an array of data to insert it to the table on first row
 function addTR(table, arrayOfData){
   //takes the first row of the table
