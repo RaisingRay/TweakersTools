@@ -1,38 +1,14 @@
 //using my function
 
-
+///////////////////////////////////////////////////////////////////tests
 
 function search(inputtext){
 var table=document.getElementsByTagName("table")[0];
   searchTable(table,inputtext.value,0);
 }
 
-function searchTable(table,text,index){
-//  console.log(text);
-var rows=table.tBodies[0].getElementsByTagName("tr");
-for(var i=0;i<rows.length;i++){
-datas=rows[i].cells;
-var tdValue=datas[index].innerHTML;
-if(tdValue.startsWith(text)){
-  rows[i].style.display="";
-}else
-  rows[i].style.display="none";
-
-}
-
-//for(var i=0;i<rows.length;i++){
-//  var td= rows[i].getElementsByTagName("tr")[index];
-//  console.log(td.cells[0]);
-//    for(var j=0;j<td.length;j++){
-//      //if(text!=td[j])
-//      //  console.log('text= '+text+' td= '+td[j]);
-//      //else
-//      //  console.log('works')
-//    }
-//}
 
 
-}
 
 
 
@@ -48,6 +24,25 @@ function addRowData(){
     addTable(table,jsonList);
 }
 
+
+
+
+
+////////////////////////////////////////////////////////tools
+
+function searchTable(table,text,index){
+
+var rows=table.tBodies[0].getElementsByTagName("tr");
+for(var i=0;i<rows.length;i++){
+datas=rows[i].cells;
+var tdValue=datas[index].innerHTML;
+if(tdValue.startsWith(text))
+  rows[i].style.display="";
+else
+  rows[i].style.display="none";
+  }
+
+}
 
 
 
