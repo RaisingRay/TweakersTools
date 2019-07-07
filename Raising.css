@@ -1,0 +1,43 @@
+table, th ,td{
+  border: solid 1px;
+}
+
+th{
+  background: lightgrey;
+  cursor: default;
+  transition: 0.3s linear;
+}
+
+th:hover{
+  background: white;
+}
+
+table{
+  width: 300px;
+}
+
+
+.header{
+  background:darkgrey;
+  color:white;
+  padding-top: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.button{
+  background: green;
+  padding: 12 20 0 20;
+  border-bottom: solid 2px red;
+  font-style: none;
+  color: white;
+  transition: 0.23s
+}
+
+.button:hover{
+  background:black;
+}
+
+.button:active{
+  background: grey;
+}

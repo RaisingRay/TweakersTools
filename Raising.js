@@ -41,11 +41,7 @@ if(tdValue.startsWith(text))
 else
   rows[i].style.display="none";
   }
-
 }
-
-
-
 function addTable(table,jsonlist){
   addTHead(table,Object.keys(jsonList[0]));
   for(var i=0;i<jsonList.length;i++){
