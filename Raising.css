@@ -25,6 +25,10 @@ table{
   overflow: hidden;
 }
 
+a{
+  text-decoration: none;
+}
+
 .button{
   background: green;
   padding: 12 20 0 20;
