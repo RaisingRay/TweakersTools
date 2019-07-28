@@ -1,7 +1,7 @@
 //using my function
 
 ///////////////////////////////////////////////////////////////////tests
-
+//
 function search(inputtext){
 var table=document.getElementsByTagName("table")[0];
   searchTable(table,inputtext.value,0);
