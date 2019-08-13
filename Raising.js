@@ -9,8 +9,6 @@ var table=document.getElementsByTagName("table")[0];
 
 
 
-//test oh mansdf
-
 
 function addRowData(){
   var table=document.getElementsByTagName("table")[0];
