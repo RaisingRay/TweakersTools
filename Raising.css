@@ -1,7 +1,10 @@
 table, th ,td{
   border: solid 1px;
 }
-
+body{
+  margin:0;
+  padding:0;
+}
 th{
   background: lightgrey;
   cursor: default;
